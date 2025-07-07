@@ -1,0 +1,5 @@
+# Ignore virtual environments
+rasa_env_310/
+llm_env/
+*.pyc
+__pycache__/
