@@ -1,0 +1,17 @@
+version: "3.1"
+
+rules:
+- rule: Say hello
+  steps:
+    - intent: greet
+    - action: utter_greet
+
+- rule: Say goodbye
+  steps:
+    - intent: goodbye
+    - action: utter_goodbye
+
+- rule: Handle fallback with Haystack
+  steps:
+    - intent: fallback_semantic
+    - action: action_semantic_faq
